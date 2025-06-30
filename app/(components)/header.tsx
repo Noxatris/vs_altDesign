@@ -11,7 +11,7 @@ export default function Header() {
                 <SocialNav />
                 <AccountMenu  />
             </div>
-            <div className="flex items-center justify-between px-4 py-2 bg-zinc-800 text-white">
+            <div className="flex items-center justify-between px-4 py-2 text-white">
                 <LandingNav />
                 <LandingSearch />
             </div>

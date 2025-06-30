@@ -69,18 +69,18 @@ const navGroups = [
 export default function Navbar() {
 
     return (
-        <nav className="px-4 py-3">
+        <nav className="px-4 py-3 font-[UncialAntiqua] text-xl mx-auto">
             <div className="flex items-center">
                 {navGroups.map((group, i) => (
                     <div
                         key={i}
-                        className={`flex space-x-8 bg-zinc-900 px-4 py-2 mx-8 ${group.className}`}
+                        className={`flex space-x-8 px-4 py-2 mx-8 ${group.className}`}
                     >
                         {group.items.map((item, j) => (
                             <div key={j} className="relative group">
                                 <button className="hover:text-yellow-400 transition">{item.name}</button>
                                 {item.sub.length > 0 && (
-                                    <div className="absolute left-0 top-full mt-2 bg-zinc-800 rounded shadow-lg z-10 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition duration-150">
+                                    <div className="absolute left-0 top-full mt-2 rounded shadow-lg z-10 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition duration-150">
                                         <div className="flex px-4 py-2 gap-4">
                                             {item.sub.map((sub, k) => (
                                                 <Link

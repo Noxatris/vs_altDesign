@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function AccountMenu() {
     const [isLogin, setIsLogin] = useState(false);
     return (
-        <div className="relative flex items-center justify-between bg-zinc-900 text-white px-4 py-2 ml-auto">
+        <div className="relative flex items-center justify-between text-white px-4 py-2 ml-auto">
             {isLogin ? (
                 <div className="flex items-center space-x-4">
                     <span className="text-white">Welcome, User</span>

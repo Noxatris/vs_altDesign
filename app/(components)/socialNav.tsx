@@ -38,7 +38,7 @@ export default function SocialNav() {
     return (
         <nav className=" text-white px-4 py-3">
             <div className="flex space-x-8">
-                {menuItems.map((item, i) => (
+                {menuItems.map((item) => (
                     <Link href={item.link} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-white hover:text-green-300 transition-colors">
                         <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                             <path d={item.icon} />
