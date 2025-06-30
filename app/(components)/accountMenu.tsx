@@ -15,7 +15,7 @@ export default function AccountMenu() {
             ) : (
                 <div className="flex items-center space-x-4">   
                     <button className="text-white hover:text-yellow-400 transition" onClick={() => setIsLogin(true)}>Existing user? Sign In</button>
-                    <button className="bg-green-500 p-2 rounded-xl text-white hover:text-yellow-400 transition">Sign Up</button>
+                    <button className="bg-green-700 p-2 rounded-xl text-white hover:text-yellow-400 transition">Sign Up</button>
                 </div>
             )}
         </div>
