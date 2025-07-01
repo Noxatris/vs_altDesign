@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 import ContentSection from './(components)/contentSection';
 import StandardSection from './(components)/standardSection';
+import Footer from './(components)/footer';
 
 export default function Home() {
   return (
@@ -56,6 +57,7 @@ export default function Home() {
 
       <StandardSection />
       <ContentSection />
+      <Footer />
     </div>
   );
 }

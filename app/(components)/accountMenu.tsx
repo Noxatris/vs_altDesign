@@ -138,6 +138,11 @@ export default function AccountMenu() {
                             <button
                                 type="submit"
                                 className="bg-green-700 hover:bg-green-600 transition rounded p-2 text-white font-semibold"
+                                onClick={(e) => {
+                                    e.preventDefault()
+                                    setIsLogin(true)
+                                    setShowModal(false)
+                                }}
                             >
                                 Sign Up
                             </button>
