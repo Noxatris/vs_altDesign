@@ -1,7 +1,8 @@
 'use client'
 
 import { useEffect, useRef, useState } from "react"
-import Link from "next/link"
+
+import SignupForm from "./signupForm"
 
 export default function AccountMenu() {
     const [isLogin, setIsLogin] = useState(false)
@@ -119,7 +120,7 @@ export default function AccountMenu() {
                     onClick={() => setShowModal(false)}
                 >
                     <div
-                        className="bg-zinc-900 text-white p-8 rounded-xl shadow-xl w-[100%] max-w-xl border border-green-900 max-h-[80vh] overflow-y-scroll"
+                        className="bg-zinc-900 text-white p-8 rounded-xl shadow-xl w-[100%] max-w-xl border border-green-900 max-h-[80vh] overflow-y-scroll custom-scrollbar"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <h2 className="text-2xl font-semibold text-yellow-400 mb-4 text-center font-[EDGaramond]">
@@ -141,83 +142,8 @@ export default function AccountMenu() {
                                 <p className="w-[95%]">Sign in with Google</p>
                             </button>
                         </div>
-                        <form className="flex flex-col space-y-4 ">
-                            <div>
-                                <p>Display Name</p>
-                                <input
-                                    type="text"
-                                    placeholder=""
-                                    required
-                                    className="bg-zinc-800 p-2 rounded border border-zinc-700 text-white placeholder-zinc-400 w-full mt-2"
-                                />
-                            </div>
-                            <div>
-                                <p>Email Address</p>
-                                <input
-                                    type="email"
-                                    placeholder="Email"
-                                    className="bg-zinc-800 p-2 rounded border border-zinc-700 text-white placeholder-zinc-400 w-full mt-2"
-                                />
-                            </div>
-                            <div>
-                                <p>Password</p>
-                                <input
-                                    type="password"
-                                    placeholder="Password"
-                                    className="bg-zinc-800 p-2 rounded border border-zinc-700 text-white placeholder-zinc-400 w-full mt-2"
-                                />
-                            </div>
-                            <div>
-                                <p>Confirm Password</p>
-                                <input
-                                    type="password"
-                                    placeholder="Password"
-                                    className="bg-zinc-800 p-2 rounded border border-zinc-700 text-white placeholder-zinc-400 w-full mt-2"
-                                />
-                            </div>
-                            <div>
-                                <p>Security Check - (Placeholder)</p>
-                                <div className="flex items-center gap-3 bg-white text-black px-4 py-3 rounded-md border border-gray-300 shadow-sm w-fit">
-                                    <div className="w-5 h-5 border border-gray-500 rounded-sm bg-gray-100 flex items-center justify-center">
-                                        {/* Optionnel : une fausse coche */}
-                                        <div className="w-3 h-3 bg-gray-400 rounded-sm" />
-                                    </div>
-                                    <span className="text-sm">Je ne suis pas un robot</span>
-                                    <div className="ml-auto">
-                                        <img src="/recaptcha-placeholder-logo.png" alt="reCAPTCHA" className="h-5 opacity-60" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="flex items-center gap-3">
-                                    <input
-                                        type="checkbox"
-                                        id="newsletter"
-                                        className=""
-                                    />
-                                    <label htmlFor="newsletter" className="">Send me news and updates</label>
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <input
-                                        type="checkbox"
-                                        id="term_privacy"
-                                        className=""
-                                    />
-                                    <label htmlFor="term_privacy" className="font-bold">I agree to the <Link href="/" className="text-blue-400">Terms of Use</Link> and <Link href="/" className="text-blue-400">Privacy Policy</Link></label>
-                                </div>
-                            </div>
-                            <button
-                                type="submit"
-                                className="bg-green-700 hover:bg-green-600 transition rounded p-2 text-white font-semibold"
-                                onClick={(e) => {
-                                    e.preventDefault()
-                                    setIsLogin(true)
-                                    setShowModal(false)
-                                }}
-                            >
-                                Create my Account
-                            </button>
-                        </form>
+                        <SignupForm setIsLogin={setIsLogin} setShowModal={setShowModal}/>
+
                     </div>
                 </div>
             )}

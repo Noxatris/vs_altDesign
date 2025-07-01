@@ -74,3 +74,36 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
+
+
+/* Custom Scrollbar */
+
+.custom-scrollbar::-webkit-scrollbar{
+  width: 8px;
+}
+
+.custom-scrollbar2::-webkit-scrollbar {
+  width: 0px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track, .custom-scrollbar2::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(120deg, #352000, #027525);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  animation: thumbSparkle 1.5s infinite linear;
+}
+
+.custom-scrollbar2::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+  border: 0px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  animation: thumbSparkle 1.5s infinite linear;
+}
