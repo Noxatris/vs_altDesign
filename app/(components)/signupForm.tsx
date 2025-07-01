@@ -21,7 +21,7 @@ function getPasswordStrength(password: string) {
     }
 }
 
-export default function SignupForm({ setIsLogin, setShowModal }: { setIsLogin: any, setShowModal: any }) {
+export default function SignupForm({ setIsLogin, setShowModal }: { setIsLogin: React.Dispatch<React.SetStateAction<boolean>>, setShowModal: React.Dispatch<React.SetStateAction<boolean>>}) {
     const [displayName, setDisplayName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
