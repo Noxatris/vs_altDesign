@@ -1,7 +1,15 @@
 export default function LandingSearch() {
     return (
-        <div className="flex items-center gap-2 bg-zinc-800 p-2 rounded-xl shadow-inner max-w-xl mx-auto">
-            <select className="bg-zinc-700 text-green-300 px-3 py-2 rounded-l-lg text-sm outline-none focus:ring-2 focus:ring-green-700">
+        <div className="backdrop-blur-md bg-zinc-900/60 border border-green-900 rounded-2xl shadow-xl px-6 py-4 flex flex-col md:flex-row gap-4 items-center w-full max-w-4xl mx-auto">
+            <input
+                type="text"
+                placeholder="Search..."
+                className="flex-1 px-4 py-2 bg-zinc-800/70 text-white placeholder:text-zinc-400 font-[EBGaramond] text-lg tracking-wide rounded-md focus:outline-none focus:ring-2 focus:ring-green-700 transition"
+            />
+
+            <select
+                className="px-4 py-2 bg-zinc-800/70 text-white font-[EBGaramond] text-lg rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
+            >
                 <option value="everywhere">Everywhere</option>
                 <option value="statusUpdates">Status Updates</option>
                 <option value="topics">Topics</option>
@@ -12,16 +20,11 @@ export default function LandingSearch() {
                 <option value="members">Members</option>
             </select>
 
-            <input
-                type="text"
-                placeholder="Search..."
-                className="flex-1 px-4 py-2 bg-zinc-700 text-green-100 placeholder-green-400 rounded-r-lg text-sm outline-none focus:ring-2 focus:ring-green-700"
-            />
-
-            <button className="ml-2 px-4 py-2 bg-green-700 hover:bg-green-600 text-white rounded-md text-sm shadow-md transition duration-200">
+            <button
+                className="px-6 py-2 bg-green-800 hover:bg-green-700 text-white font-[Amendra] text-xl rounded-md transition tracking-wider shadow-md"
+            >
                 Search
             </button>
         </div>
-
     )
 }
