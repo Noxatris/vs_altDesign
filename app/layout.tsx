@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./(components)/header";
-
+import Footer from "./(components)/footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-screen overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen overflow-x-hidden`}
       >
         <div className="fixed top-0 left-0 w-full h-screen overflow-hidden pointer-events-none -z-1">
           <video
@@ -42,6 +42,7 @@ export default function RootLayout({
         </div>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
