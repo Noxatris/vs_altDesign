@@ -21,7 +21,7 @@ function getPasswordStrength(password: string) {
     }
 }
 
-export default function SignupForm({ setIsLogin, setShowModal }: { setIsLogin: React.Dispatch<React.SetStateAction<boolean>>, setShowModal: React.Dispatch<React.SetStateAction<boolean>>}) {
+export default function SignupForm({ setIsLogin, setShowModal }: { setIsLogin: React.Dispatch<React.SetStateAction<boolean>>, setShowModal: React.Dispatch<React.SetStateAction<boolean>> }) {
     const [displayName, setDisplayName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -130,9 +130,27 @@ export default function SignupForm({ setIsLogin, setShowModal }: { setIsLogin: R
                     <p className="text-red-500 text-sm mt-1">Passwords do not match.</p>
                 )}
             </div>
+            <div>
+                <p>Security Check</p>
+                <div className="flex items-center mt-2 gap-3 bg-white text-black px-4 py-3 rounded-md border border-gray-300 shadow-sm w-fit dark:bg-zinc-800 dark:text-white dark:border-zinc-600">
+
+                    <div className="w-5 h-5 border border-gray-500 rounded-sm bg-gray-100 dark:bg-zinc-700 flex items-center justify-center">
+                        {/* Placeholder checkbox look */}
+                        <div className="w-3 h-3 bg-gray-400 rounded-sm dark:bg-zinc-400" />
+                    </div>
+                    <span className="text-sm select-none">Je ne suis pas un robot</span>
+                    <div className="ml-auto">
+                        <img
+                            src="/recaptcha-placeholder-logo.png"
+                            alt="reCAPTCHA"
+                            className="h-5 opacity-60 dark:opacity-40"
+                        />
+                    </div>
+                </div>
+            </div>
 
             {/* Terms */}
-            <div className='border-t-2 border-white pt-4'>
+            <div className='border-t-2 border-b-2 border-white py-4'>
                 <div className="flex items-center gap-3 mt-2">
                     <input
                         type="checkbox"
