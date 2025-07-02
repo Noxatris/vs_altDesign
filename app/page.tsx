@@ -24,10 +24,14 @@ export default function Home() {
 
             <Link
               href="#"
-              className="bg-[#4C6B4F] hover:bg-[#5E7F57] text-white font-semibold px-6 py-3 rounded-md transition duration-200 inline-block shadow-md"
+              className="relative inline-block px-6 py-3 font-[Almendra] text-lg text-yellow-100 bg-gradient-to-br from-green-700 via-emerald-800 to-green-950 rounded-xl shadow-lg ring-2 ring-green-900 hover:ring-yellow-400 transition duration-300 overflow-hidden group"
             >
-              Buy now for 20 € / 22 $
+              <span className="absolute inset-0 bg-yellow-400 opacity-10 group-hover:opacity-20 transition-all duration-300 blur-lg" />
+              <span className="relative z-10 flex items-center gap-2">
+                💎 Buy now for <span className="text-yellow-300 font-bold">20 €</span> / <span className="text-green-300 font-bold">22 $</span>
+              </span>
             </Link>
+
           </div>
 
           {/* Bloc droit */}

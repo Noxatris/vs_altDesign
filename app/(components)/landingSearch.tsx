@@ -1,6 +1,6 @@
 export default function LandingSearch() {
     return (
-        <div className="backdrop-blur-md bg-zinc-900/60 border border-green-900 rounded-2xl shadow-xl px-6 py-4 flex flex-col md:flex-row gap-4 items-center w-full max-w-4xl mx-auto">
+        <div className="backdrop-blur-md bg-zinc-900/60 border border-green-900 rounded-2xl shadow-xl px-3 py-2 flex flex-col md:flex-row gap-4 items-center w-[35%] mr-auto">
             <input
                 type="text"
                 placeholder="Search..."
@@ -8,7 +8,7 @@ export default function LandingSearch() {
             />
 
             <select
-                className="px-4 py-2 bg-zinc-800/70 text-white font-[EBGaramond] text-lg rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
+                className="px-4 py-1 bg-zinc-800/70 text-white font-[EBGaramond] text-lg rounded-md focus:outline-none focus:ring-2 focus:ring-green-700"
             >
                 <option value="everywhere">Everywhere</option>
                 <option value="statusUpdates">Status Updates</option>

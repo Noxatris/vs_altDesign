@@ -12,39 +12,39 @@ const navGroups = [
                 name: "Home",
                 href: "/",
                 sub: [
-                    { label: "System Requirements", href: "/home/1" },
-                    { label: "Server hosting", href: "/home/2" },
-                    { label: "Frequently Asked Questions", href: "/home/3" },
-                    { label: "About us", href: "/home/4" },
-                    { label: "Jobs", href: "/home/5" },
+                    { label: "System Requirements", href: "/sysrequirements" },
+                    { label: "Server hosting", href: "/faq.html" },
+                    { label: "Frequently Asked Questions", href: "/faq.html" },
+                    { label: "About us", href: "/aboutus.html" },
+                    { label: "Jobs", href: "/jobs.html" },
                 ],
             },
             {
                 name: "Devlog",
-                href: "/devlog",
+                href: "/blog.html",
                 sub: [
-                    { label: "Roadmap", href: "/devlog/1" },
-                    { label: "News", href: "/devlog/2" },
-                    { label: "Community Showcase and Events", href: "/devlog/2" },
+                    { label: "Roadmap", href: "/roadmap.html" },
+                    { label: "News", href: "/news" },
+                    { label: "Community Showcase and Events", href: "/community-spotlight-events" },
                 ],
             },
             { 
                 name: "Media", 
-                href: "/media", 
+                href: "/media.html", 
                 sub: [
-                    { label: "Press kit", href: "/media/videos" },
-                    { label: "Story Excerpt - The Morning", href: "/media/screenshots" },
-                    { label: "Story Excerpt - Ghosts", href: "/media/artwork" },
+                    { label: "Press kit", href: "/presskit.html" },
+                    { label: "Story Excerpt - The Morning", href: "/stories/storyexcerpt-themorning.html" },
+                    { label: "Story Excerpt - Ghosts", href: "/stories/storyexcerpt-ghosts.html" },
                 ] 
             },
             { name: "Forums", href: "/forums", sub: [] },
-            { name: "Buy", href: "/buy", sub: [] },
+            { name: "Buy", href: "/store/category/1-game-account-game-servers", sub: [] },
             {
                 name: "Client Area",
-                href: "/client",
+                href: "/",
                 sub: [
-                    { label: "Support", href: "/client/support" },
-                    { label: "Downloads", href: "/client/downloads" },
+                    { label: "Support", href: "/support" },
+                    { label: "Downloads", href: "/" },
                 ],
             },
         ],
@@ -53,9 +53,9 @@ const navGroups = [
         name: "Community",
         className: "",
         items: [
-            { name: "Wiki", href: "/wiki", sub: [] },
-            { name: "Mods", href: "/mods", sub: [] },
-            { name: "Chat", href: "/chat", sub: [] },
+            { name: "Wiki", href: "https://wiki.vintagestory.at/Main_Page/fr", sub: [] },
+            { name: "Mods", href: "https://mods.vintagestory.at/", sub: [] },
+            { name: "Chat", href: "https://discord.com/invite/CkJjdrB", sub: [] },
         ],
     },
 ];
@@ -122,7 +122,7 @@ export default function Navbar() {
 
                                     {hasSub && (
                                         <div
-                                            className={`absolute left-0 top-full mt-2 bg-zinc-900/95 backdrop-blur-md rounded shadow-lg z-10 transition-all duration-200 
+                                            className={`absolute -left-5 top-full mt-2 rounded z-10 transition-all duration-200
                                             ${isOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-1 pointer-events-none"
                                                 }`}
                                         >
@@ -139,7 +139,7 @@ export default function Navbar() {
                                                     <Link
                                                         key={k}
                                                         href={sub.href}
-                                                        className="px-2 py-1 hover:bg-zinc-700 rounded whitespace-nowrap font-[Almendra]"
+                                                        className="text-[1.1em] px-2 py-1 hover:border-l-3 border-green-500 hover:text-green-500 whitespace-nowrap font-[Almendra]"
                                                     >
                                                         {sub.label}
                                                     </Link>
