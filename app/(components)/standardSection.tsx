@@ -26,15 +26,15 @@ export default function StandardSection() {
                     <h3 className="font-[Almendra] text-2xl font-semibold font-title text-yellow-200 mb-2">Handmade</h3>
                     <p className='font-[EBGaramond] text-[1.3em]'>
                         Vintage Story is powered by our own cross-platform game engine. This allows us to tailor the engine exactly to our needs while
-                        still keeping <Link href="/" className='border-b-1 border-green-700 text-green-700 font-bold'>hardware requirements</Link> low. <strong>We are 100% Indie.</strong>
+                        still keeping <Link href="/sysrequirements" className='border-b-1 border-green-700 text-green-700 font-bold'>hardware requirements</Link> low. <strong>We are 100% Indie.</strong>
                     </p>
                 </div>
 
                 <div>
                     <h3 className="font-[Almendra] text-2xl font-semibold font-title text-yellow-200 mb-2">Social</h3>
                     <p className='font-[EBGaramond] text-[1.3em]'>
-                        We pay careful attention to foster a friendly and supportive community. Come visit us on the official <Link href="/" className='border-b-1 border-green-700 text-green-700 font-bold'>forum</Link>, <Link href="/" className='border-b-1 border-green-700 text-green-700 font-bold'>Discord chat server</Link>,
-                        <Link href="/" className='border-b-1 border-green-700 text-green-700 font-bold'>wiki</Link> and <Link href="/" className='border-b-1 border-green-700 text-green-700 font-bold'>mod database</Link>. <strong>Multiplayer anti-grief mechanics out of the box.</strong> You can get in direct contact with the
+                        We pay careful attention to foster a friendly and supportive community. Come visit us on the official <Link href="/forums" className='border-b-1 border-green-700 text-green-700 font-bold'>forum</Link>, <Link href="https://discord.com/invite/CkJjdrB" className='border-b-1 border-green-700 text-green-700 font-bold'>Discord chat server</Link>,
+                        <Link href="https://wiki.vintagestory.at/index.php?title=Main_Page" className='border-b-1 border-green-700 text-green-700 font-bold'>wiki</Link> and <Link href="https://mods.vintagestory.at/" className='border-b-1 border-green-700 text-green-700 font-bold'>mod database</Link>. <strong>Multiplayer anti-grief mechanics out of the box.</strong> You can get in direct contact with the
                         developers of the game.
                     </p>
                 </div>
@@ -43,7 +43,7 @@ export default function StandardSection() {
                     <h3 className="font-[Almendra] text-2xl font-semibold font-title text-yellow-200 mb-2">Open</h3>
                     <p className='font-[EBGaramond] text-[1.3em]'>
                         You can customize your game experience in infinite ways. Built from the ground up with modding in mind – we use our own mod API to
-                        add new game content. Half of the game is under a <Link href="/" className='border-b-1 border-green-700 text-green-700 font-bold'>readable source license</Link>. We built our own <Link href="/" className='border-b-1 border-green-700 text-green-700 font-bold'>mod database</Link>, <Link href="/" className='border-b-1 border-green-700 text-green-700 font-bold'>modelling and animation
+                        add new game content. Half of the game is under a <Link href="https://github.com/anegostudios?utf8=%E2%9C%93&q=&type=source&language=" className='border-b-1 border-green-700 text-green-700 font-bold'>readable source license</Link>. We built our own <Link href="https://github.com/anegostudios/vsmoddb" className='border-b-1 border-green-700 text-green-700 font-bold'>mod database</Link>, <Link href="https://github.com/anegostudios/vsmodelcreator" className='border-b-1 border-green-700 text-green-700 font-bold'>modelling and animation
                             tools</Link> and made them open source.
                     </p>
                 </div>

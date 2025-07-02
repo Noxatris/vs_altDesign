@@ -6,7 +6,7 @@ import AccountMenu from "./accountMenu";
 export default function Header() {
     return (
         <header>
-            <div className="flex items-center px-16 py-2 text-white">
+            <div className="flex flex-col md:flex-row items-center px-16 py-2 text-white">
                 <img src="/studioLogo.svg" className="h-16 mr-4" alt="" />
                 <SocialNav />
                 <AccountMenu  />

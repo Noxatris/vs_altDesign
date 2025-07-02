@@ -5,7 +5,7 @@ import StandardSection from './(components)/standardSection';
 
 export default function Home() {
   return (
-    <div className="w-screen">
+    <div className="w-screen overflow-x-hidden">
       <section className="h-[80vh] flex flex-col items-center justify-center text-white">
         <h1 className="font-[Almendra] text-[10em] text-transparent bg-clip-text bg-gradient-to-r from-[#4C6B4F] via-[#5E7F57] to-[#3E5942] drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]">
           Vintage Story
@@ -23,7 +23,7 @@ export default function Home() {
             </p>
 
             <Link
-              href="#"
+              href="/store/category/1-game-account-game-servers"
               className="relative inline-block px-6 py-3 font-[Almendra] text-lg text-yellow-100 bg-gradient-to-br from-green-700 via-emerald-800 to-green-950 rounded-xl shadow-lg ring-2 ring-green-900 hover:ring-yellow-400 transition duration-300 overflow-hidden group"
             >
               <span className="absolute inset-0 bg-yellow-400 opacity-10 group-hover:opacity-20 transition-all duration-300 blur-lg" />
