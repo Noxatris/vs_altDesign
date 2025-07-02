@@ -25,7 +25,7 @@ export default function UserSub({ setIsLogin }: { setIsLogin: React.Dispatch<Rea
                 <Link href="/" className="hover:cursor-pointer hover:text-green-500">Account Settings</Link>
                 <Link href="/" className="hover:cursor-pointer hover:text-green-500">Ignored Users</Link>
             </div>
-            <button className="flex border-t-1 border-white pt-4 hover:cursor-pointer hover:text-green-500" onClick={(e) => {setIsLogin(false)}}>Sign Out</button>
+            <button className="flex border-t-1 border-white pt-4 hover:cursor-pointer hover:text-green-500" onClick={() => {setIsLogin(false)}}>Sign Out</button>
         </div>
     )
 }
