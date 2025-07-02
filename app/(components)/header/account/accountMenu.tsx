@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react"
 
 import SignupSection from "./signupSection"
 import SigninSection from "./signinSection"
-import UserMenu from "./userMenu"
+import UserMenu from "./login/userMenu"
 
 
 export default function AccountMenu() {
@@ -34,7 +34,7 @@ export default function AccountMenu() {
 
     return (
         <>
-            <div className="relative flex items-center justify-end text-white px-4 py-2 ml-auto">
+            <div className="relative flex items-center justify-end text-white px-4 py-2 md:ml-auto">
                 {isLogin ? (
                     <UserMenu setIsLogin={setIsLogin}/>
                 ) : (

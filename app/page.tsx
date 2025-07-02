@@ -1,18 +1,18 @@
 import Link from 'next/link';
 
-import ContentSection from './(components)/contentSection';
-import StandardSection from './(components)/standardSection';
+import ContentSection from './(components)/landing/contentSection';
+import StandardSection from './(components)/landing/standardSection';
 
 export default function Home() {
   return (
     <div className="w-screen overflow-x-hidden">
       <section className="md:h-[80vh] flex flex-col items-center justify-center text-white mb-8 md:mb-0">
-        <h1 className="font-[Almendra] text-[5em] text-center md:text-[10em] text-transparent bg-clip-text bg-gradient-to-r from-[#4C6B4F] via-[#5E7F57] to-[#3E5942] drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]">
+        <h1 className="font-[Almendra] text-[5em] text-center md:text-[10em] text-transparent bg-clip-text bg-gradient-to-r from-[#4C6B4F] via-[#5E7F57] to-[#3E5942] drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)] -z-10">
           Vintage Story
         </h1>
         <p className="flex justify-center w-[90%] md:w-[65%] text-2xl font-[EBGaramond] mt-12">Vintage Story is an uncompromising wilderness survival sandbox game inspired by eldritch horror themes. Find yourself in a ruined world reclaimed by nature and permeated by unnerving temporal disturbances. Relive the advent of human civilization, or take your own path.</p>
       </section>
-      <section className="bg-zinc-900/80 backdrop-blur-md px-6 py-12 rounded-2xl w-[90%] max-w-6xl mx-auto text-white shadow-xl border border-zinc-700">
+      <section className="bg-zinc-900/80 -z-[] md:backdrop-blur-md px-6 py-12 rounded-2xl w-[90%] max-w-6xl mx-auto text-white shadow-xl border border-zinc-700">
         <div className="flex flex-col md:flex-row justify-between items-center gap-10">
 
           {/* Bloc gauche */}
@@ -24,10 +24,9 @@ export default function Home() {
 
             <Link
               href="/store/category/1-game-account-game-servers"
-              className="relative inline-block px-6 py-3 font-[Almendra] text-lg text-yellow-100 bg-gradient-to-br from-green-700 via-emerald-800 to-green-950 rounded-xl shadow-lg ring-2 ring-green-900 hover:ring-yellow-400 transition duration-300 overflow-hidden group"
+              className="inline-block px-6 py-3 font-[Almendra] text-lg text-yellow-100 bg-gradient-to-br from-green-700 via-emerald-800 to-green-950 rounded-xl shadow-lg ring-2 ring-green-900 hover:ring-yellow-400 transition duration-300 overflow-hidden group"
             >
-              <span className="absolute inset-0 bg-yellow-400 opacity-10 group-hover:opacity-20 transition-all duration-300 blur-lg" />
-              <span className="relative z-10 flex items-center gap-2">
+              <span className="flex items-center gap-2">
                 💎 Buy now for <span className="text-yellow-300 font-bold">20 €</span> / <span className="text-green-300 font-bold">22 $</span>
               </span>
             </Link>

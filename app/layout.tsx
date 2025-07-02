@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "./(components)/header";
+import Header from "./(components)/header/header";
 import Footer from "./(components)/footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen overflow-x-hidden`}
       >
-        <div className="fixed top-0 left-0 w-full h-screen overflow-hidden pointer-events-none -z-1">
+        <div className="fixed top-0 left-0 w-full h-screen overflow-hidden pointer-events-none -z-20">
           <video
             src="/vs_trailer.mp4"
             autoPlay
