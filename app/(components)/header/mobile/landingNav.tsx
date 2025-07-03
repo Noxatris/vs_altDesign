@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { X, Menu } from "lucide-react";
 
-import AccountMenu from "../account/accountMenu"; // Adjust the import path as necessary
+import AccountMenu from "../account/accountMenu";
 
 const navGroups = [
     {
@@ -90,7 +90,6 @@ export default function MobileNav() {
                 {/* Navigation */}
                 <div className="p-4">
                     {openSub === null ? (
-                        // Menu principal
                         <>
                             {navGroups.map((group, i) => (
                                 <div key={i} className={`pb-2 ${i !== navGroups.length - 1 ? "border-b border-zinc-700 mb-4" : ""}`}>
@@ -124,7 +123,6 @@ export default function MobileNav() {
                             ))}
                         </>
                     ) : (
-                        // Sous-menu
                         <>
                             <div className="flex items-center px-2 py-2 border-b border-zinc-700">
                                 <button onClick={() => setOpenSub(null)} className="text-sm text-yellow-400 hover:underline">

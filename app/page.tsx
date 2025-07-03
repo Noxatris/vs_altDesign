@@ -15,7 +15,7 @@ export default function Home() {
       <section className="bg-zinc-900/80 -z-[] md:backdrop-blur-md px-6 py-12 rounded-2xl w-[90%] max-w-6xl mx-auto text-white shadow-xl border border-zinc-700">
         <div className="flex flex-col md:flex-row justify-between items-center gap-10">
 
-          {/* Bloc gauche */}
+          {/* Left Block */}
           <div className="md:w-1/2 text-center space-y-4">
             <p className="text-lg text-zinc-200">
               <span className="text-green-400 font-semibold">Early Access</span>. Fully playable on Windows, Mac and Linux. <br />
@@ -33,7 +33,7 @@ export default function Home() {
 
           </div>
 
-          {/* Bloc droit */}
+          {/* Right Block */}
           <div className="md:w-1/2 text-center">
             <p className="text-zinc-300 mb-3 italic">Also available on</p>
             <div className="flex justify-center gap-6">

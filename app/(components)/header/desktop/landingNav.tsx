@@ -103,12 +103,12 @@ export default function Navbar() {
                                     onMouseEnter={() => handleMouseEnter(indexKey)}
                                     onMouseLeave={handleMouseLeave}
                                 >
-                                    {/* PC : lien direct si href */}
+                                    {/* PC : Direct Link */}
                                     <Link
                                         href={item.href || "#"}
                                         onClick={(e) => {
                                             if (isMobile && hasSub) {
-                                                e.preventDefault(); // empêchera la redirection
+                                                e.preventDefault();
                                                 toggleSubMenu(indexKey);
                                             }
                                         }}

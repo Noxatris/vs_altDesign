@@ -9,7 +9,6 @@ export default function SigninSection({ setIsLogin }: { setIsLogin: React.Dispat
         shadow-xl z-50
         left-4 sm:left-auto
       "
-      // ajoute si besoin pour fixer verticalement
     >
       <h3 className="text-yellow-400 text-lg font-[Almendra] text-[1.8em] mb-5 text-center w-full">
         Sign In
@@ -54,7 +53,6 @@ export default function SigninSection({ setIsLogin }: { setIsLogin: React.Dispat
       </form>
       <div className="flex flex-col items-center space-y-4 mb-4 w-full sm:w-[45%]">
         <h3>Or sign in with one of these services</h3>
-        {/* boutons sociaux inchangés */}
         <button className="flex items-center justify-around bg-[#3b5998] hover:bg-[#314e89] transition text-white font-medium py-2 px-4 rounded w-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"

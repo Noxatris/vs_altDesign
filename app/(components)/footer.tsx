@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { X } from "lucide-react"; // Icône optionnelle
+import { X } from "lucide-react";
 
 export default function Footer() {
   const [showModal, setShowModal] = useState(false);
@@ -30,7 +30,6 @@ export default function Footer() {
         <Link href="https://invisioncommunity.com/">Powered by Invision Community</Link>
       </footer>
 
-      {/* Modal style similaire à Notifications */}
       {showModal && (
         <div className="fixed inset-0 bg-black/40 z-40 flex items-start justify-start xl:justify-end px-4 pt-12">
           <div className="absolute top-10 bg-zinc-800 border border-green-900 rounded-xl p-4 shadow-xl z-50 flex flex-col items-center w-[90vw] max-w-[450px] sm:w-[25vw]">

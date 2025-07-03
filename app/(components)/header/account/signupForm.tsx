@@ -44,7 +44,6 @@ export default function SignupForm({ setIsLogin, setShowModal }: { setIsLogin: R
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()
 
-        // Validation simple
         if (!displayName || !email || !password || !confirmPassword || !isPasswordMatch) return
 
         setIsLogin(true)

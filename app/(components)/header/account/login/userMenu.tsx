@@ -49,7 +49,6 @@ export default function UserMenu({ setIsLogin }: { setIsLogin: React.Dispatch<Re
                 <Link href="#">
                     <img src="/defaultPP.png" alt="profile" className="rounded-full w-8 h-8 overflow-hidden hover:cursor-pointer" />
                 </Link>
-                {/* Optionnel : dropdown ici aussi */}
             </div>
 
             {/* Username dropdown */}

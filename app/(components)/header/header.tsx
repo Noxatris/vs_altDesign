@@ -16,7 +16,6 @@ export default function Header() {
         return () => window.removeEventListener('resize', checkMobile);
     }, []);
 
-    // Si le client ne sait pas encore la taille de l’écran, on ne rend rien (évite le flash)
     if (isMobile === null) return null;
 
     return isMobile ? <MobileHeader /> : <DesktopHeader />;

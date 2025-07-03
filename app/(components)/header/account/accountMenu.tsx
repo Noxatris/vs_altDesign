@@ -13,7 +13,7 @@ export default function AccountMenu() {
     const [showLoginForm, setShowLoginForm] = useState(false)
     const loginRef = useRef<HTMLDivElement>(null)
 
-    // Gestion du clic à l'extérieur du dropdown
+    // Handle click outside to close the login form
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
             if (loginRef.current && !loginRef.current.contains(event.target as Node)) {
