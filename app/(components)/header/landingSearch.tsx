@@ -1,8 +1,9 @@
 import { Search } from 'lucide-react';
+import Link from 'next/link';
 
 export default function LandingSearch() {
     return (
-        <div className="md:backdrop-blur-md md:bg-zinc-900/60 md:border md:border-green-900 rounded-2xl md:shadow-xl px-3 py-2 flex flex-col md:flex-row gap-4 items-center w-[35%] mr-auto">
+        <div className="md:backdrop-blur-md md:bg-zinc-900/60 md:border md:border-green-900 rounded-2xl md:shadow-xl px-3 py-2 flex flex-col md:flex-row gap-4 items-center w-[35%] xl:mr-auto">
             <input
                 type="text"
                 placeholder="Search..."
@@ -22,11 +23,12 @@ export default function LandingSearch() {
                 <option value="members">Members</option>
             </select>
 
-            <button
+            <Link
                 className="px-6 py-2 bg-green-800 hover:bg-green-700 text-white font-[Amendra] text-xl rounded-md transition tracking-wider shadow-md"
+                href="/search"
             >
                 <Search />
-            </button>
+            </Link>
         </div>
     )
 }
