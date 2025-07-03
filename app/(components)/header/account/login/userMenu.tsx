@@ -10,7 +10,7 @@ import UserSub from "./userSub"
 function Dropdown({ isOpen, children }: { isOpen: boolean, children: React.ReactNode }) {
     if (!isOpen) return null
     return (
-        <div className="absolute top-10 right-0 bg-zinc-800 border border-green-900 rounded-xl p-4 shadow-xl z-50">
+        <div className="">
             {children}
         </div>
     )

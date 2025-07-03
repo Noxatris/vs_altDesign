@@ -37,14 +37,14 @@ export default function Home() {
           <div className="md:w-1/2 text-center">
             <p className="text-zinc-300 mb-3 italic">Also available on</p>
             <div className="flex justify-center gap-6">
-              <Link href="/">
+              <Link href="https://www.humblebundle.com/store/vintage-story">
                 <img
                   src="/humblestore.webp"
                   alt="Buy on Humble Store"
                   className="h-10 hover:scale-105 transition-transform duration-200"
                 />
               </Link>
-              <Link href="/">
+              <Link href="https://tyronx.itch.io/vintage-story">
                 <img
                   src="/itchio.webp"
                   alt="Buy on Itch.io"

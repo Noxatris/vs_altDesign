@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function UserSub({ setIsLogin }: { setIsLogin: React.Dispatch<React.SetStateAction<boolean>> }) {
     return (
-        <div className="flex flex-col space-y-4 px-4 py-2 text-white w-[15vw]">
+        <div className="absolute -left-25 top-10 xl:left-auto xl:right-0 z-10 bg-zinc-800 border border-green-900 flex flex-col space-y-4 rounded-xl px-4 py-4 text-white w-[80vw] max-w-[350px] sm:w-[20vw]">
             <div className="flex">
                 <div className="w-[15%] h-[5vh] mr-2 flex items-center justify-center">
                     <img src="/Forum-WolfBaitALT.webp" alt="" className="flex items-center justify-center" />
