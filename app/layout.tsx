@@ -30,7 +30,7 @@ export default function RootLayout({
       >
         <div className="fixed top-0 left-0 w-full h-screen overflow-hidden pointer-events-none -z-20">
           <video
-            src="/vs_trailer.mp4"
+            src="/vs_trailer.webm"
             autoPlay
             loop
             muted
