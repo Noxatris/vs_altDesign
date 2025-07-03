@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Mail, X } from "lucide-react"; // Icône optionnelle
+import { X } from "lucide-react"; // Icône optionnelle
 
 export default function Footer() {
   const [showModal, setShowModal] = useState(false);
